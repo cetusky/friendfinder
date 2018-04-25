@@ -56,21 +56,21 @@
     <h3>
       <strong>Question 3</strong>
     </h3>
-    <h4>How often do you smile at your neighbor?</h4>
+    <h4>Do you wanna build a surfingboard?</h4>
     <select class="chosen-select" id="q3">
         <option value=""></option>
         <option value="1">1 (No Thanks)</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (I LOVE IT)</option>
+        <option value="5">5 (YES!!!!!!)</option>
     </select>
 
 
     <h3>
       <strong>Question 4</strong>
     </h3>
-    <h4>Do you enjoy it when it rains?</h4>
+    <h4>Do you like salt water?</h4>
     <select class="chosen-select" id="q4">
         <option value=""></option>
         <option value="1">1 (No Thanks)</option>
@@ -84,7 +84,7 @@
     <h3>
       <strong>Question 5</strong>
     </h3>
-    <h4>Do you enjoy snowy weather?</h4>
+    <h4>Do you like to walk on beach?</h4>
     <select class="chosen-select" id="q5">
         <option value=""></option>
         <option value="1">1 (No Thanks)</option>
@@ -98,7 +98,7 @@
     <h3>
       <strong>Question 6</strong>
     </h3>
-    <h4>Do you enjoy the mountains?</h4>
+    <h4>Do you like swimming?</h4>
     <select class="chosen-select" id="q6">
             <option value=""></option>
             <option value="1">1 (No Thanks)</option>
@@ -112,7 +112,7 @@
     <h3>
       <strong>Question 7</strong>
     </h3>
-    <h4>Do you enjoy the ocean?</h4>
+    <h4>Do you LOVE the ocean?</h4>
     <select class="chosen-select" id="q7">
             <option value=""></option>
             <option value="1">1 (No Thanks)</option>
@@ -125,7 +125,7 @@
     <h3>
       <strong>Question 8</strong>
     </h3>
-    <h4>Do you enjoy the desert?</h4>
+    <h4>Do you like sushi?</h4>
     <select class="chosen-select" id="q8">
             <option value=""></option>
             <option value="1">1 (No Thanks)</option>
@@ -138,27 +138,27 @@
     <h3>
       <strong>Question 9</strong>
     </h3>
-    <h4>How well do you love fast food?</h4>
+    <h4>Do you wanna go deep into the ocean?</h4>
     <select class="chosen-select" id="q9">
             <option value=""></option>
             <option value="1">1 (No Thanks)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5 (I LOVE IT)</option>
+            <option value="5">5 (YES PLEASE)</option>
     </select>
 
     <h3>
       <strong>Question 10</strong>
     </h3>
-    <h4>How well do you love fine dining?</h4>
+    <h4>Do you wanna go find Nemo?</h4>
     <select class="chosen-select" id="q10">
             <option value=""></option>
             <option value="1">1 (No Thanks)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5 (I LOVE IT)</option>
+            <option value="5">5 (YES LET'S GO!)</option>
     </select>
 
     <br>
@@ -222,7 +222,7 @@
           parseFloat($('#q10').val())
         ]
       }
-      $.post("https://lit-coast-80381.herokuapp.com/api/friends", object, function (data) {
+      $.post("https://findyosoulmate.herokuapp.com/api/friends", object, function (data) {
         console.log('sucessfull request');
         console.log(data.name);
         // manipulate dom to input information from the server response on winner
